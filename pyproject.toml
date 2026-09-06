@@ -1,0 +1,57 @@
+[build-system]
+requires = [
+    "setuptools>=68",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "robotreplay"
+version = "1.0.0"
+description = "Evidence-based incident investigation and root-cause diagnosis for ROS 2 autonomous robots"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = {file = "LICENSE"}
+keywords = [
+    "robotics",
+    "ros2",
+    "autonomous-robots",
+    "diagnostics",
+    "root-cause-analysis",
+    "robot-telemetry",
+]
+
+authors = [
+    {name = "Atharva Zadbuke"}
+]
+
+dependencies = [
+    "numpy>=2.2,<3.0",
+    "pandas>=2.3,<3.0",
+    "scipy>=1.15,<2.0",
+    "scikit-learn==1.7.2",
+    "joblib>=1.5,<2.0",
+    "PyYAML>=6.0,<7.0",
+    "plotly>=6.9,<7.0",
+    "streamlit>=1.61,<2.0",
+    "reportlab>=4.4,<5.0",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/atharva10764/RobotReplay"
+Repository = "https://github.com/atharva10764/RobotReplay"
+Issues = "https://github.com/atharva10764/RobotReplay/issues"
+
+
+[project.scripts]
+robotreplay = "robotreplay.analyze:main"
+
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+    "robotreplay",
+    "robotreplay.*",
+]

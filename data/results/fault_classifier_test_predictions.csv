@@ -1,0 +1,201 @@
+sample_id,source_mission,label,predicted_label,correct,prob_healthy,prob_lidar_dropout,prob_localization_jump,prob_tf_delay_discontinuity,prob_wheel_encoder_direction_mismatch
+healthy_003__Healthy__000,healthy_003,Healthy,Healthy,True,0.9070618989916871,0.013160252259293681,0.0033333333333333335,0.04041431162472837,0.03603020379095749
+healthy_003__Healthy__001,healthy_003,Healthy,Healthy,True,0.7461019451252182,0.03762384041570605,0.0062753155141960035,0.09998966412070824,0.11000923482417159
+healthy_003__Healthy__002,healthy_003,Healthy,Healthy,True,0.9101039084193049,0.005537833223073146,0.008785404018845255,0.044142590605937726,0.031430263732838956
+healthy_003__Healthy__003,healthy_003,Healthy,Healthy,True,0.7771369615209773,0.04133309114548629,0.0020430107526881723,0.0907255202706563,0.08876141631019188
+healthy_003__Healthy__004,healthy_003,Healthy,Healthy,True,0.8910469608831223,0.005796180883750211,0.0046857016378928735,0.06158498267921372,0.03688617391602065
+healthy_003__Healthy__005,healthy_003,Healthy,Healthy,True,0.8665614516037522,0.02169678347925301,0.014505008803632655,0.08479101013471547,0.012445745978646542
+healthy_003__Healthy__006,healthy_003,Healthy,Healthy,True,0.9369376805016609,0.0018208613748452677,0.006814814814814814,0.0474596994844133,0.006966943824265554
+healthy_003__Healthy__007,healthy_003,Healthy,Healthy,True,0.9344193675661031,0.0025622943966521214,0.007820943740423553,0.04823045047255559,0.006966943824265554
+healthy_003__Healthy__008,healthy_003,Healthy,Healthy,True,0.7876603840252879,0.03347676453951581,0.0024570458404074703,0.0923225703768468,0.08408323521794185
+healthy_003__Healthy__009,healthy_003,Healthy,Healthy,True,0.9347870008525365,0.0018108197495865816,0.00464784904744117,0.038986123430377134,0.019768206920058536
+healthy_003__Healthy__010,healthy_003,Healthy,Healthy,True,0.8660318677379246,0.022196154115367392,0.002020640882961638,0.06911361285971615,0.04063772440402993
+healthy_003__Healthy__011,healthy_003,Healthy,Healthy,True,0.9495364178003117,0.002498297039859197,0.007904475771242663,0.02187103044808813,0.01818977894049853
+healthy_003__Healthy__012,healthy_003,Healthy,Healthy,True,0.9427770697322948,0.0067256917252235685,0.0025,0.03483286687986802,0.013164371662613769
+healthy_003__Healthy__013,healthy_003,Healthy,Healthy,True,0.9474671370984269,0.003780737704918033,0.002839505663787665,0.0268788120538823,0.01903380747898525
+healthy_003__Healthy__014,healthy_003,Healthy,Healthy,True,0.8989998314506351,0.004403613051084992,0.0033333333333333335,0.057531959109546366,0.03573126305539991
+healthy_003__Healthy__015,healthy_003,Healthy,Healthy,True,0.8078211342797718,0.0300375671227556,0.0040001055452243885,0.09174023652526242,0.06640095652698581
+healthy_003__Healthy__016,healthy_003,Healthy,Healthy,True,0.7785404631632304,0.04071243905490854,0.002020640882961638,0.08067923324583487,0.0980472236530647
+healthy_003__Healthy__017,healthy_003,Healthy,Healthy,True,0.7730313915521368,0.039592788067919674,0.0037096774193548384,0.08622716815593158,0.09743897480465742
+healthy_003__Healthy__018,healthy_003,Healthy,Healthy,True,0.9339043678927379,0.002994725587883156,0.004658931579609464,0.04307967829466986,0.015362296645099614
+healthy_003__Healthy__019,healthy_003,Healthy,Healthy,True,0.9267092927911608,0.006619208625436224,0.0016666666666666668,0.03220479314381446,0.032800038772921564
+healthy_003__Healthy__020,healthy_003,Healthy,Healthy,True,0.8563681802672786,0.01307631042691963,0.006146515129956365,0.10006751138961503,0.024341482786230325
+healthy_003__Healthy__021,healthy_003,Healthy,Healthy,True,0.9540469712031423,0.005093640394414665,0.005237533664485461,0.021985535355146964,0.0136363193828108
+healthy_003__Healthy__022,healthy_003,Healthy,Healthy,True,0.9420843312029471,0.006127424721123607,0.002947905120595069,0.024939494315482983,0.023900844639851294
+healthy_003__Healthy__023,healthy_003,Healthy,Healthy,True,0.9433637564561059,0.005545566402773757,0.007222222222222224,0.022849899866937196,0.02101855505196102
+healthy_003__Healthy__024,healthy_003,Healthy,Healthy,True,0.8868670252842125,0.012927788262276231,0.0040001055452243885,0.05065981900530842,0.04554526190297869
+healthy_003__Healthy__025,healthy_003,Healthy,Healthy,True,0.9441234566749352,0.00887889973610709,0.006321924603174603,0.021560541140229865,0.01911517784555351
+healthy_003__Healthy__026,healthy_003,Healthy,Healthy,True,0.9294228560237828,0.0036181466145939717,0.0033333333333333335,0.035114276130029605,0.028511387898260097
+healthy_003__Healthy__027,healthy_003,Healthy,Healthy,True,0.8829700009140483,0.022086591877638388,0.00953133477590339,0.07454688566313201,0.010865186769278043
+healthy_003__Healthy__028,healthy_003,Healthy,Healthy,True,0.9452665712896644,0.003780737704918033,0.003105826953791926,0.03151278109054689,0.016334082961078914
+healthy_003__Healthy__029,healthy_003,Healthy,Healthy,True,0.9250887216027905,0.005893409475341279,0.0046857016378928735,0.03745568129766232,0.026876485986313283
+healthy_003__Healthy__030,healthy_003,Healthy,Healthy,True,0.7820012262374724,0.04204775632831185,0.0020430107526881723,0.0857894123643376,0.08811859431719007
+healthy_003__Healthy__031,healthy_003,Healthy,Healthy,True,0.9226635464590521,0.009104059887018748,0.004147812971342383,0.043924114977007364,0.020160465705579358
+healthy_003__Healthy__032,healthy_003,Healthy,Healthy,True,0.7814660130556524,0.034085420595298746,0.0007903791737408037,0.09471147449215789,0.08894671268315031
+healthy_003__Healthy__033,healthy_003,Healthy,Healthy,True,0.9211591679725306,0.009411470462900145,0.009218152979280358,0.05503724665035237,0.005173961934936698
+healthy_003__Healthy__034,healthy_003,Healthy,Healthy,True,0.9086606651791105,0.0072488410271133235,0.009685701637892874,0.044085639534155646,0.030319152621727845
+healthy_003__Healthy__035,healthy_003,Healthy,Healthy,True,0.9327527008994364,0.0025622943966521214,0.007820943740423553,0.04989711713922226,0.006966943824265554
+healthy_003__Healthy__036,healthy_003,Healthy,Healthy,True,0.9371398276781135,0.00765814350745743,0.0025,0.036781428417812505,0.015920600396616615
+healthy_003__Healthy__037,healthy_003,Healthy,Healthy,True,0.9395002628468522,0.0018208613748452677,0.00625,0.045461931954037076,0.006966943824265554
+healthy_003__Healthy__038,healthy_003,Healthy,Healthy,True,0.9249441658882396,0.007165656712867919,0.0016666666666666668,0.033871459810481126,0.032352050921744646
+healthy_003__Healthy__039,healthy_003,Healthy,Healthy,True,0.9499943683767916,0.004229648071062682,0.0011233896448225526,0.02544560210214809,0.01920699180517519
+healthy_003__Localization_Jump__000,healthy_003,Localization Jump,Localization Jump,True,0.005,0.0,0.9933333333333333,0.0016666666666666668,0.0
+healthy_003__Localization_Jump__001,healthy_003,Localization Jump,Localization Jump,True,0.012465423044196183,0.0,0.9864327251039519,0.001101851851851852,0.0
+healthy_003__Localization_Jump__002,healthy_003,Localization Jump,Localization Jump,True,0.006666666666666667,0.0,0.9933333333333333,0.0,0.0
+healthy_003__Localization_Jump__003,healthy_003,Localization Jump,Localization Jump,True,0.004936066897982413,0.0,0.9947724936204586,0.0002914394815589947,0.0
+healthy_003__Localization_Jump__004,healthy_003,Localization Jump,Localization Jump,True,0.005614035087719298,0.0016666666666666668,0.9887096774193549,0.001290322580645161,0.002719298245614035
+healthy_003__Localization_Jump__005,healthy_003,Localization Jump,Localization Jump,True,0.009583036338463918,0.0,0.9885651118096842,0.001851851851851852,0.0
+healthy_003__Localization_Jump__006,healthy_003,Localization Jump,Localization Jump,True,0.00698468855773676,0.0,0.9930153114422634,0.0,0.0
+healthy_003__Localization_Jump__007,healthy_003,Localization Jump,Localization Jump,True,0.007696217882869437,0.0,0.9852161832607518,0.006641044707292892,0.00044655414908579465
+healthy_003__Localization_Jump__008,healthy_003,Localization Jump,Localization Jump,True,0.0,0.0,0.9983333333333333,0.0016666666666666668,0.0
+healthy_003__Localization_Jump__009,healthy_003,Localization Jump,Localization Jump,True,0.006666666666666667,0.0,0.9920430107526882,0.001290322580645161,0.0
+healthy_003__Localization_Jump__010,healthy_003,Localization Jump,Localization Jump,True,0.0,0.0,0.9983333333333333,0.0016666666666666668,0.0
+healthy_003__Localization_Jump__011,healthy_003,Localization Jump,Localization Jump,True,0.005660537741057927,0.0,0.9915709437404234,0.0027685185185185182,0.0
+healthy_003__Localization_Jump__012,healthy_003,Localization Jump,Localization Jump,True,0.002280701754385965,0.0,0.9966666666666667,0.0,0.0010526315789473684
+healthy_003__Localization_Jump__013,healthy_003,Localization Jump,Localization Jump,True,0.004936066897982413,0.0,0.9947724936204586,0.0002914394815589947,0.0
+healthy_003__Localization_Jump__014,healthy_003,Localization Jump,Localization Jump,True,0.005614035087719298,0.0016666666666666668,0.9887096774193549,0.001290322580645161,0.002719298245614035
+healthy_003__Localization_Jump__015,healthy_003,Localization Jump,Localization Jump,True,0.008702199574518761,0.0,0.9858768682357691,0.004974378040626225,0.00044655414908579465
+healthy_003__Localization_Jump__016,healthy_003,Localization Jump,Localization Jump,True,0.0033333333333333335,0.0,0.995,0.0016666666666666668,0.0
+healthy_003__Localization_Jump__017,healthy_003,Localization Jump,Localization Jump,True,0.006666666666666667,0.0,0.9916666666666667,0.0016666666666666668,0.0
+healthy_003__Localization_Jump__018,healthy_003,Localization Jump,Localization Jump,True,0.005763640102964201,0.0,0.9886227713346026,0.005167034413347269,0.00044655414908579465
+healthy_003__Localization_Jump__019,healthy_003,Localization Jump,Localization Jump,True,0.005972809045609539,0.0,0.9884136023919573,0.005167034413347269,0.00044655414908579465
+healthy_003__Localization_Jump__020,healthy_003,Localization Jump,Localization Jump,True,0.004006086839857735,0.0016666666666666668,0.9923334388785576,0.0003271409482512101,0.0016666666666666668
+healthy_003__Localization_Jump__021,healthy_003,Localization Jump,Localization Jump,True,0.008702491641364319,0.0,0.9912975083586356,0.0,0.0
+healthy_003__Localization_Jump__022,healthy_003,Localization Jump,Localization Jump,True,0.006866666666666667,0.0016666666666666668,0.9874570458404075,0.001290322580645161,0.002719298245614035
+healthy_003__Localization_Jump__023,healthy_003,Localization Jump,Localization Jump,True,0.0033333333333333335,0.0,0.9966666666666667,0.0,0.0
+healthy_003__Localization_Jump__024,healthy_003,Localization Jump,Localization Jump,True,0.007511212450055241,0.0,0.9870678553602327,0.004974378040626225,0.00044655414908579465
+healthy_003__Localization_Jump__025,healthy_003,Localization Jump,Localization Jump,True,0.0033333333333333335,0.0,0.9966666666666667,0.0,0.0
+healthy_003__Localization_Jump__026,healthy_003,Localization Jump,Localization Jump,True,0.0044535519125683065,0.000546448087431694,0.9933333333333333,0.0016666666666666668,0.0
+healthy_003__Localization_Jump__027,healthy_003,Localization Jump,Localization Jump,True,0.005,0.0,0.9920430107526882,0.001290322580645161,0.0016666666666666668
+healthy_003__Localization_Jump__028,healthy_003,Localization Jump,Localization Jump,True,0.008685345649603502,0.0,0.9896479876837299,0.0016666666666666668,0.0
+healthy_003__Localization_Jump__029,healthy_003,Localization Jump,Localization Jump,True,0.0,0.0,0.9966666666666667,0.0033333333333333335,0.0
+healthy_003__Localization_Jump__030,healthy_003,Localization Jump,Localization Jump,True,0.00530810832806194,0.0,0.9941301460823373,0.0005617455896007428,0.0
+healthy_003__Localization_Jump__031,healthy_003,Localization Jump,Localization Jump,True,0.0016666666666666668,0.0,0.995564814814815,0.0027685185185185182,0.0
+healthy_003__Localization_Jump__032,healthy_003,Localization Jump,Localization Jump,True,0.005833333333333334,0.0,0.9941666666666666,0.0,0.0
+healthy_003__Localization_Jump__033,healthy_003,Localization Jump,Localization Jump,True,0.005614035087719298,0.0016666666666666668,0.9887096774193549,0.001290322580645161,0.002719298245614035
+healthy_003__Localization_Jump__034,healthy_003,Localization Jump,Localization Jump,True,0.007818021891070094,0.0,0.99218197810893,0.0,0.0
+healthy_003__Localization_Jump__035,healthy_003,Localization Jump,Localization Jump,True,0.008255645425432966,0.0,0.9875435349024358,0.004200819672131148,0.0
+healthy_003__Localization_Jump__036,healthy_003,Localization Jump,Localization Jump,True,0.01123872015884811,0.0,0.9816736809847731,0.006641044707292892,0.00044655414908579465
+healthy_003__Localization_Jump__037,healthy_003,Localization Jump,Localization Jump,True,0.009289806367214371,0.0016666666666666668,0.9803763440860216,0.003518734836912571,0.005148448043184885
+healthy_003__Localization_Jump__038,healthy_003,Localization Jump,Localization Jump,True,0.004006086839857735,0.0033333333333333335,0.9873334388785576,0.0036604742815845434,0.0016666666666666668
+healthy_003__Localization_Jump__039,healthy_003,Localization Jump,Localization Jump,True,0.0033333333333333335,0.0,0.995,0.0016666666666666668,0.0
+healthy_003__LiDAR_Dropout__000,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0008089260808926082,0.9975244072524407,0.0,0.0016666666666666668,0.0
+healthy_003__LiDAR_Dropout__001,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.010962347010227967,0.9846132633844498,0.0,0.003541621243740288,0.000882768361581921
+healthy_003__LiDAR_Dropout__002,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0016666666666666668,0.9983333333333333,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__003,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0009414225941422594,0.9966666666666667,0.0,0.002391910739191074,0.0
+healthy_003__LiDAR_Dropout__004,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.007629013676894633,0.9879465967177832,0.0,0.003541621243740288,0.000882768361581921
+healthy_003__LiDAR_Dropout__005,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.008186912184923756,0.9901464211484097,0.0,0.0016666666666666668,0.0
+healthy_003__LiDAR_Dropout__006,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.003958973249693561,0.9915433098553292,0.0,0.004497716894977169,0.0
+healthy_003__LiDAR_Dropout__007,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.005228660658048475,0.9913166777838417,0.00012132822477650065,0.0033333333333333335,0.0
+healthy_003__LiDAR_Dropout__008,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.009323827269843377,0.988487528041512,0.0,0.0021886446886446886,0.0
+healthy_003__LiDAR_Dropout__009,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.00901321575288831,0.9909867842471116,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__010,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.02300302802314988,0.969255218522019,0.0,0.0025493369296471116,0.005192416525183928
+healthy_003__LiDAR_Dropout__011,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.008713626905544652,0.9890977284058107,0.0,0.0021886446886446886,0.0
+healthy_003__LiDAR_Dropout__012,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0019477456985152182,0.9980522543014848,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__013,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.012275786160644566,0.9877242138393554,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__014,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.013632187924981757,0.9775269400134744,0.0,0.0016666666666666668,0.007174205394877265
+healthy_003__LiDAR_Dropout__015,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.003873314098724253,0.9934151324225006,0.0,0.000983050847457627,0.0017285026313176447
+healthy_003__LiDAR_Dropout__016,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.00916836962680747,0.9908316303731926,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__017,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.003873314098724253,0.9934151324225006,0.0,0.000983050847457627,0.0017285026313176447
+healthy_003__LiDAR_Dropout__018,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.004419734577155866,0.9926278869697571,0.00012132822477650065,0.0028310502283105023,0.0
+healthy_003__LiDAR_Dropout__019,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.005435356129678378,0.9896712763528855,0.0,0.0016666666666666668,0.003226700850769392
+healthy_003__LiDAR_Dropout__020,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.011970010934003189,0.9820839899696132,0.0,0.0,0.005945999096383428
+healthy_003__LiDAR_Dropout__021,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.010869165711733542,0.9868208613748454,0.00012132822477650065,0.0021886446886446886,0.0
+healthy_003__LiDAR_Dropout__022,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0072442665625396425,0.9847679361396405,0.0,0.004216003596313778,0.0037717937015061616
+healthy_003__LiDAR_Dropout__023,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0033333333333333335,0.9966666666666667,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__024,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0021120575147771797,0.9926649815177211,0.0,0.005222960967501577,0.0
+healthy_003__LiDAR_Dropout__025,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.007568938260856008,0.9924310617391441,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__026,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.007568938260856008,0.9924310617391441,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__027,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0019007158954428298,0.9950079711338476,0.0,0.0030913129707095953,0.0
+healthy_003__LiDAR_Dropout__028,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.005752412893085253,0.9942475871069147,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__029,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.005262725779967159,0.9947372742200329,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__030,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.012854317653737046,0.9837887324637723,0.0005405727112747903,0.002816377171215881,0.0
+healthy_003__LiDAR_Dropout__031,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0033333333333333335,0.9966666666666667,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__032,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0038183807439824947,0.9961816192560177,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__033,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.11441927764882988,0.840363485821292,0.0,0.012437751317458895,0.03277948521241931
+healthy_003__LiDAR_Dropout__034,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0014754925757260533,0.9933015464567723,0.0,0.005222960967501577,0.0
+healthy_003__LiDAR_Dropout__035,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.00973288575583973,0.9902671142441603,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__036,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.007699927176610206,0.9869342606239254,0.0,0.002816377171215881,0.002549435028248588
+healthy_003__LiDAR_Dropout__037,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.0077807299114899565,0.9922192700885099,0.0,0.0,0.0
+healthy_003__LiDAR_Dropout__038,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.004779261539941403,0.9925091849812833,0.0,0.000983050847457627,0.0017285026313176447
+healthy_003__LiDAR_Dropout__039,healthy_003,LiDAR Dropout,LiDAR Dropout,True,0.001545338441890166,0.9955022831050228,0.00012132822477650065,0.0028310502283105023,0.0
+healthy_003__TF_Delay_/_Discontinuity__000,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.025242803892337008,0.0,0.0005767484105358764,0.9731656182217523,0.0010148294753750393
+healthy_003__TF_Delay_/_Discontinuity__001,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.020577466096626137,0.0008443590559403477,0.0016666666666666668,0.9769115081807667,0.0
+healthy_003__TF_Delay_/_Discontinuity__002,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.028792150707855745,0.0,0.00046094750320102443,0.9674035282949673,0.0033433734939759038
+healthy_003__TF_Delay_/_Discontinuity__003,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.025822226198064402,0.0,0.0,0.9728869853914192,0.0012907884105163988
+healthy_003__TF_Delay_/_Discontinuity__004,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.033113014154152805,0.0,0.0016666666666666668,0.9652203191791805,0.0
+healthy_003__TF_Delay_/_Discontinuity__005,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.028875914205435033,0.0,0.0,0.971124085794565,0.0
+healthy_003__TF_Delay_/_Discontinuity__006,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.01807131272340495,0.005,0.0,0.9715880164598425,0.005340670816752533
+healthy_003__TF_Delay_/_Discontinuity__007,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.028249521802042033,0.0,0.0016666666666666668,0.9700838115312913,0.0
+healthy_003__TF_Delay_/_Discontinuity__008,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.0275864315443901,0.0,0.0,0.9707368616283006,0.001676706827309237
+healthy_003__TF_Delay_/_Discontinuity__009,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.33486088468329867,0.00045893719806763285,0.0026831697254232467,0.660016350948617,0.0019806574445931876
+healthy_003__TF_Delay_/_Discontinuity__010,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.028231792908787707,0.0,0.0,0.9717682070912121,0.0
+healthy_003__TF_Delay_/_Discontinuity__011,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.035730664455389125,0.0,0.0,0.9642693355446107,0.0
+healthy_003__TF_Delay_/_Discontinuity__012,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.02396450162911201,0.0008443590559403477,0.0016666666666666668,0.9735244726482807,0.0
+healthy_003__TF_Delay_/_Discontinuity__013,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.022227886989975933,0.0,0.0,0.9777721130100239,0.0
+healthy_003__TF_Delay_/_Discontinuity__014,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.020130307455248818,0.0,0.0016666666666666668,0.9782030258780846,0.0
+healthy_003__TF_Delay_/_Discontinuity__015,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.028871675610093146,0.0004249084249084249,0.0,0.9707034159649983,0.0
+healthy_003__TF_Delay_/_Discontinuity__016,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.027770166109610722,0.0008443590559403477,0.0016666666666666668,0.969718808167782,0.0
+healthy_003__TF_Delay_/_Discontinuity__017,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.020911430834642055,0.0,0.0,0.9736897811983094,0.00539878796704848
+healthy_003__TF_Delay_/_Discontinuity__018,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.01941958980963562,0.0008443590559403477,0.0016666666666666668,0.9780693844677573,0.0
+healthy_003__TF_Delay_/_Discontinuity__019,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.01985903979784089,0.005808241219890318,0.0,0.9691008573324624,0.005231861649806572
+healthy_003__TF_Delay_/_Discontinuity__020,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.025893674466576068,0.0,0.0,0.9741063255334239,0.0
+healthy_003__TF_Delay_/_Discontinuity__021,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.023729842641332433,0.0,0.0,0.9733360586571557,0.0029340987015117567
+healthy_003__TF_Delay_/_Discontinuity__022,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.0475504896643352,0.0005466666666666665,0.0,0.9473862574762272,0.004516586192771081
+healthy_003__TF_Delay_/_Discontinuity__023,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.3456396288919543,0.0016801568885397064,0.00625,0.6422854051994878,0.004144809020018041
+healthy_003__TF_Delay_/_Discontinuity__024,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.026001466833364573,0.00018442644314473668,0.0,0.9693182582419362,0.004495848481554378
+healthy_003__TF_Delay_/_Discontinuity__025,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.029679929785162897,0.0,0.0016666666666666668,0.9686534035481704,0.0
+healthy_003__TF_Delay_/_Discontinuity__026,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.04314383056512974,0.000646436187942746,0.0003265768958185684,0.9537333918796893,0.0021497644714195126
+healthy_003__TF_Delay_/_Discontinuity__027,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.027674022293469793,0.0,0.0,0.9697991929482089,0.002526784758321261
+healthy_003__TF_Delay_/_Discontinuity__028,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.03533929075919568,0.0011503623188405796,0.0,0.9607440883316208,0.0027662585903429414
+healthy_003__TF_Delay_/_Discontinuity__029,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.02697381835600788,0.0005022831050228311,0.00046094750320102443,0.9699131865643489,0.0021497644714195126
+healthy_003__TF_Delay_/_Discontinuity__030,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.018416993647551207,0.0011723546954914106,0.0016666666666666668,0.9787439849902908,0.0
+healthy_003__TF_Delay_/_Discontinuity__031,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.027727335893040925,0.0,0.00046094750320102443,0.968468343109782,0.0033433734939759038
+healthy_003__TF_Delay_/_Discontinuity__032,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.041344612306685624,0.005935207716438477,0.0,0.9402331834596718,0.012486996517204186
+healthy_003__TF_Delay_/_Discontinuity__033,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.045471909157200334,0.0008713692946058091,0.0,0.9536567215481938,0.0
+healthy_003__TF_Delay_/_Discontinuity__034,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.01920483817969697,0.005,0.0,0.9704544910035503,0.005340670816752533
+healthy_003__TF_Delay_/_Discontinuity__035,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.022239158653877215,0.0011675579322638144,0.0,0.9765932834138589,0.0
+healthy_003__TF_Delay_/_Discontinuity__036,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.06700326727631657,0.0008713692946058091,0.0005389221556886229,0.9310823540799286,0.0005040871934604904
+healthy_003__TF_Delay_/_Discontinuity__037,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.03718116314323646,0.005935207716438477,0.0,0.9443966326231208,0.012486996517204186
+healthy_003__TF_Delay_/_Discontinuity__038,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.021356636818180962,0.0,0.0016666666666666668,0.9726674995654198,0.004309196949732522
+healthy_003__TF_Delay_/_Discontinuity__039,healthy_003,TF Delay / Discontinuity,TF Delay / Discontinuity,True,0.30750961828851636,0.002968853545394301,0.008898484848484848,0.6784656809837526,0.0021573623338516836
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__000,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0016666666666666668,0.9983333333333333
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__001,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.005,0.0,0.0,0.0,0.995
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__002,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.48489802728481646,0.004156750319339999,0.002916666666666667,0.02277295544604574,0.48525560028313114
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__003,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__004,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__005,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__006,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.003947368421052631,0.0,0.0,0.0007677165354330709,0.9952849150435144
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__007,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.1574125986492655,0.009364948513739764,0.0010952380952380953,0.013065333605371801,0.8190618811363848
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__008,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.33793936926768353,0.006644243466909685,0.0016666666666666668,0.01281848341395614,0.6409312371847842
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__009,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__010,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0033333333333333335,0.0,0.0,0.0,0.9966666666666667
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__011,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.2313561242208765,0.0019470927495291905,0.004166666666666667,0.00246065808297568,0.7600694582799519
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__012,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.10517954127740138,0.0020331992112304215,0.0005555555555555557,0.015551135080211444,0.8766805688756013
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__013,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__014,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0033333333333333335,0.0,0.0,0.0,0.9966666666666667
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__015,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.26015689967895794,0.0017802325802525483,0.0005555555555555557,0.021239108989247968,0.7162682031959858
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__016,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.05208084479533299,0.0,0.0,0.004181137220988649,0.9437380179836784
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__017,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.02474753689988738,0.0,0.0016666666666666668,0.0016666666666666668,0.9719191297667792
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__018,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0008786610878661089,0.0,0.0,0.0,0.9991213389121338
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__019,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.005,0.0,0.0,0.0,0.995
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__020,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__021,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.01,0.0,0.0,0.0,0.99
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__022,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0068056815708581,0.0,0.0,0.002523235648198816,0.990671082780943
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__023,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0033333333333333335,0.0,0.0,0.0,0.9966666666666667
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__024,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__025,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.12689309441715757,0.010570149579409022,0.0,0.013454842203817123,0.8490819137996162
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__026,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.2103263605096995,0.0016666666666666668,0.0012650602409638553,0.014948287966296133,0.7717936246163737
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__027,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.02882962990039968,0.0,0.0,0.0014493973768167317,0.9697209727227835
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__028,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.015190467178042745,0.0,0.0,0.0,0.9848095328219573
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__029,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0007543103448275862,0.0,0.0,0.0,0.9992456896551725
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__030,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0024209770114942525,0.0,0.0,0.0,0.9975790229885058
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__031,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0008786610878661089,0.0,0.0,0.0,0.9991213389121338
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__032,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__033,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.001492696175585407,0.0,0.0,0.0,0.9985073038244145
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__034,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0005100182149362477,0.0,0.0,0.0,0.9994899817850638
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__035,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__036,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0027530244431667353,0.0,0.0,0.0006705882352941176,0.9965763873215391
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__037,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__038,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0,0.0,0.0,0.0,1.0
+healthy_003__Wheel_/_Encoder_Direction_Mismatch__039,healthy_003,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,True,0.0016666666666666668,0.0,0.0,0.0,0.9983333333333333

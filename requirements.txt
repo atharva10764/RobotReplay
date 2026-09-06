@@ -1,0 +1,12 @@
+# RobotReplay validated Python runtime
+# Baseline environment: Python 3.10 / ROS 2 Humble
+
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+joblib==1.5.3
+PyYAML==6.0.3
+plotly==6.9.0
+streamlit==1.61.1
+reportlab==4.4.9

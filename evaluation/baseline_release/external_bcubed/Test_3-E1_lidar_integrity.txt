@@ -1,0 +1,87 @@
+
+=== RobotReplay Feature Extraction V2 ===
+Bag:           /home/atharva10764/robotreplay_ws/external_validation/bcubed/bags/Test_3-E1
+Storage:       mcap
+Duration:      15.593 s
+Feature rows:  79
+Feature cols:  26
+
+Resolved telemetry:
+  scan             /scan_raw
+  cmd_vel          not available
+  odom             /direct_laser_odometry/odom
+  imu              not available
+  joint_states     not available
+  amcl_pose        not available
+  tf               /tf_drop
+
+Health / age features:
+  scan_age                  max=0.027s
+  odom_age                  max=11.623s
+  tf_map_odom_age           max=11.119s
+  tf_odom_base_age          max=11.691s
+
+Saved: /home/atharva10764/robotreplay_ws/data/runtime/Test_3-E1_features.csv
+Feature extraction V2: PASS
+
+LiDAR integrity enrichment:
+  raw scan messages: 747
+  peak non-monotonic fraction (1 s): 32.65%
+  peak repeated-scan fraction (1 s): 75.00%
+  peak degraded-scan fraction (1 s): 100.00%
+  minimum median finite-return fraction (1 s): 0.00%
+  minimum median valid-return fraction (1 s): 0.00%
+  maximum scan messages/window: 50
+
+Enriched feature columns: 40
+LiDAR integrity enrichment: PASS
+
+========================================
+        ROBOTREPLAY ANALYSIS
+========================================
+
+Mission: Test_3-E1
+Bag: 15.6 s | 4,082 messages | 10 topics | mcap
+Processing time: 1.181 s
+Processing speed: 13.20x realtime
+
+INCIDENT REPORT
+----------------------------------------
+Mission status: ANOMALOUS
+Most likely cause: LiDAR Stream Integrity Failure
+First diagnostic event: 0.400 s
+Evidence strength: 1.000
+ML layer: unavailable (Only 33% of Isolation Forest features are available.)
+
+Ranked hypotheses:
+  1. LiDAR Stream Integrity Failure         1.000
+  2. TF Delay / Discontinuity               1.000
+  3. Localization Jump                      0.000 [unavailable]
+  4. LiDAR Dropout                          0.000
+  5. Wheel / Encoder Direction Mismatch     0.000 [unavailable]
+
+Supporting evidence:
+  ✓ 12 LaserScan messages were available in the evidence window, providing sufficient observations for stream-integrity assessment.
+  ✓ LiDAR header timestamp ordering degraded (16.7% non-monotonic messages in the detection window).
+  ✓ Exact consecutive LiDAR payloads repeated abnormally (50.0% of messages in the detection window).
+  ✓ Most LiDAR messages in the same window contained severely degraded usable range content (75.0% severely degraded scans).
+  ✓ Median usable return content in the detection window fell to 0.0% (finite-return median 0.0%).
+  ✓ Navigation-state telemetry became persistently stale after the first LiDAR integrity event (approximately 4.600 s later), supporting downstream propagation.
+
+Failure chain:
+  → LiDAR stream integrity becomes unreliable
+  → Timestamp ordering breaks, scan payloads repeat, and usable range content deteriorates
+  → Laser-based state estimation receives inconsistent sensor observations
+  → Odometry / localization / transform updates may subsequently become stale
+  → Navigation reliability degrades
+
+Recommended checks:
+  • Inspect the LiDAR driver and transport path for duplicated, replayed, or out-of-order LaserScan messages
+  • Inspect LaserScan header timestamps and ROS time synchronization
+  • Inspect finite and in-range LaserScan return fractions over time
+  • Check LiDAR network bandwidth, DDS traffic, message rate, and compute load
+  • Inspect laser odometry and downstream TF behavior immediately after the first LiDAR integrity event
+
+Incident report saved: /home/atharva10764/robotreplay_ws/data/results/Test_3-E1_incident.json
+
+RobotReplay analysis: PASS

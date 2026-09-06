@@ -1,0 +1,427 @@
+{
+  "schema_version": "2.0",
+  "mission": "wheel_mismatch_001",
+  "mission_status": "ANOMALOUS",
+  "root_cause": "Wheel / Encoder Direction Mismatch",
+  "first_abnormal_time_s": 60.2,
+  "evidence_strength": 0.88,
+  "generic_ml": {
+    "available": true,
+    "model": "Isolation Forest",
+    "feature_coverage": 1.0,
+    "present_features": [
+      "scan_age",
+      "scan_gap",
+      "scan_rate_hz",
+      "scan_valid_fraction",
+      "cmd_vx",
+      "cmd_wz",
+      "command_active",
+      "odom_vx",
+      "odom_wz",
+      "imu_wz",
+      "left_wheel_vel",
+      "right_wheel_vel",
+      "wheel_velocity_difference",
+      "wheel_velocity_product",
+      "linear_motion_error",
+      "angular_motion_error",
+      "odom_imu_yaw_error",
+      "amcl_position_step",
+      "amcl_yaw_step",
+      "amcl_cov_x",
+      "amcl_cov_y",
+      "amcl_cov_yaw",
+      "tf_map_odom_age",
+      "tf_odom_base_age"
+    ],
+    "missing_features": [],
+    "anomaly_threshold": 0.590182,
+    "anomaly_window_rate": 0.010667,
+    "anomalous_windows": 8,
+    "total_windows": 750,
+    "peak_anomaly_score": 0.609891,
+    "first_anomaly_s": 9.0
+  },
+  "fault_classifier": {
+    "available": true,
+    "model": "Random Forest",
+    "model_version": "fault-classifier-v2",
+    "prediction": "Wheel / Encoder Direction Mismatch",
+    "prediction_probability": 0.9966666666666667,
+    "decision_threshold": 0.6,
+    "selected_window": {
+      "window_start_s": 44.0,
+      "window_end_s": 64.0,
+      "model_window_prediction": "Wheel / Encoder Direction Mismatch",
+      "model_window_probability": 0.9966666666666667
+    },
+    "class_probabilities": {
+      "Healthy": 0.0033333333333333335,
+      "LiDAR Dropout": 0.0,
+      "Localization Jump": 0.0,
+      "TF Delay / Discontinuity": 0.0,
+      "Wheel / Encoder Direction Mismatch": 0.9966666666666667
+    },
+    "ranked_class_probabilities": [
+      {
+        "class": "Wheel / Encoder Direction Mismatch",
+        "probability": 0.9966666666666667
+      },
+      {
+        "class": "Healthy",
+        "probability": 0.0033333333333333335
+      },
+      {
+        "class": "LiDAR Dropout",
+        "probability": 0.0
+      },
+      {
+        "class": "Localization Jump",
+        "probability": 0.0
+      },
+      {
+        "class": "TF Delay / Discontinuity",
+        "probability": 0.0
+      }
+    ],
+    "mission_peak_support": {
+      "Healthy": 0.9914119936782013,
+      "LiDAR Dropout": 0.04767000511334795,
+      "Localization Jump": 0.013939857288481142,
+      "TF Delay / Discontinuity": 0.13862946059508788,
+      "Wheel / Encoder Direction Mismatch": 0.9966666666666667
+    },
+    "ranked_mission_peak_support": [
+      {
+        "class": "Wheel / Encoder Direction Mismatch",
+        "support": 0.9966666666666667
+      },
+      {
+        "class": "Healthy",
+        "support": 0.9914119936782013
+      },
+      {
+        "class": "TF Delay / Discontinuity",
+        "support": 0.13862946059508788
+      },
+      {
+        "class": "LiDAR Dropout",
+        "support": 0.04767000511334795
+      },
+      {
+        "class": "Localization Jump",
+        "support": 0.013939857288481142
+      }
+    ],
+    "peak_fault_windows": {
+      "Healthy": {
+        "window_start_s": 14.0,
+        "window_end_s": 34.0,
+        "support": 0.9914119936782013
+      },
+      "LiDAR Dropout": {
+        "window_start_s": 74.0,
+        "window_end_s": 94.0,
+        "support": 0.04767000511334795
+      },
+      "Localization Jump": {
+        "window_start_s": 116.0,
+        "window_end_s": 136.0,
+        "support": 0.013939857288481142
+      },
+      "TF Delay / Discontinuity": {
+        "window_start_s": 108.0,
+        "window_end_s": 128.0,
+        "support": 0.13862946059508788
+      },
+      "Wheel / Encoder Direction Mismatch": {
+        "window_start_s": 44.0,
+        "window_end_s": 64.0,
+        "support": 0.9966666666666667
+      }
+    },
+    "windows_evaluated": 65,
+    "window_seconds": 20.0,
+    "stride_seconds": 2.0,
+    "feature_coverage": 1.0,
+    "available_feature_count": 34,
+    "required_feature_count": 34,
+    "missing_features": [],
+    "validation_metrics": {
+      "evaluation_type": "Held-out source-mission controlled telemetry augmentation",
+      "train_source_missions": [
+        "healthy_001",
+        "healthy_002"
+      ],
+      "test_source_missions": [
+        "healthy_003"
+      ],
+      "training_samples": 600,
+      "test_samples": 200,
+      "classes": [
+        "Healthy",
+        "LiDAR Dropout",
+        "Localization Jump",
+        "TF Delay / Discontinuity",
+        "Wheel / Encoder Direction Mismatch"
+      ],
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "healthy_false_positive_rate": 0.0,
+      "classification_report": {
+        "Healthy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        },
+        "LiDAR Dropout": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        },
+        "Localization Jump": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        },
+        "TF Delay / Discontinuity": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        },
+        "Wheel / Encoder Direction Mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 40.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 200.0
+        }
+      },
+      "method_note": "Training variants are controlled telemetry augmentations derived from healthy_001 and healthy_002. All test variants are derived only from held-out source mission healthy_003. Source missions do not overlap between train and test."
+    },
+    "method_note": "The supervised fault classifier is used only when sufficient compatible telemetry is available. Mission-wide peak support values are calculated across rolling windows and are not probabilities. Displayed class probabilities come from one selected model decision window and sum to 1. Model probabilities are not calibrated real-world confidence."
+  },
+  "intelligence_agreement": {
+    "available": true,
+    "state": "AGREEMENT",
+    "agreement": true,
+    "evidence_prediction": "Wheel / Encoder Direction Mismatch",
+    "evidence_strength": 0.88,
+    "ml_prediction": "Wheel / Encoder Direction Mismatch",
+    "ml_probability": 0.9966666666666667,
+    "summary": "Supervised ML and ROS evidence reasoning independently support the same mission diagnosis."
+  },
+  "ranked_hypotheses": [
+    {
+      "name": "Wheel / Encoder Direction Mismatch",
+      "score": 0.88,
+      "available": true,
+      "first_event_s": 60.2,
+      "evidence": {
+        "left_residual_threshold_rad_s": 2.401,
+        "right_residual_threshold_rad_s": 3.29,
+        "model_type": "healthy command-to-wheel linear baseline",
+        "commanded_linear_velocity_mps": 0.197,
+        "commanded_angular_velocity_rad_s": -0.231,
+        "left_wheel_velocity_rad_s": 7.384,
+        "right_wheel_velocity_rad_s": -5.248,
+        "expected_left_wheel_velocity_rad_s": 6.882,
+        "expected_right_wheel_velocity_rad_s": 4.939,
+        "mismatched_wheel": "right",
+        "persistent_mismatch_windows": 23
+      },
+      "supporting_evidence": [
+        "Observed right-wheel direction contradicts the direction predicted from healthy command-to-wheel behaviour.",
+        "Mismatch persisted for 23 synchronized windows."
+      ],
+      "contradicting_evidence": [],
+      "failure_chain": [
+        "Velocity command is issued",
+        "Wheel feedback contradicts expected differential-drive response",
+        "Encoder or motor direction becomes inconsistent with commanded motion",
+        "Odometry or physical motion can diverge from the command",
+        "Navigation may lose progress or trigger recovery"
+      ],
+      "recommended_checks": [
+        "Verify motor direction and encoder polarity",
+        "Check encoder sign convention",
+        "Inspect ros2_control / diff-drive wheel configuration",
+        "Verify URDF wheel-axis orientation"
+      ]
+    },
+    {
+      "name": "Localization Jump",
+      "score": 0.0,
+      "available": true,
+      "evidence": {
+        "healthy_amcl_threshold_m": 0.496,
+        "healthy_tf_step_threshold_m": 0.095,
+        "correlation_window_s": 0.5
+      },
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "failure_chain": [],
+      "recommended_checks": []
+    },
+    {
+      "name": "LiDAR Dropout",
+      "score": 0.0,
+      "available": true,
+      "evidence": {
+        "healthy_max_scan_age_s": 0.341,
+        "scan_stale_threshold_s": 0.512
+      },
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "failure_chain": [],
+      "recommended_checks": []
+    },
+    {
+      "name": "LiDAR Stream Integrity Failure",
+      "score": 0.0,
+      "available": true,
+      "evidence": {
+        "minimum_window_scan_messages": 5,
+        "nonmonotonic_fraction_threshold": 0.1,
+        "repeated_scan_fraction_threshold": 0.2,
+        "low_quality_scan_fraction_threshold": 0.5,
+        "peak_nonmonotonic_fraction_1s": 0.0,
+        "peak_repeated_scan_fraction_1s": 0.0,
+        "peak_low_quality_scan_fraction_1s": 0.0,
+        "minimum_finite_median_1s": 0.8639,
+        "minimum_valid_median_1s": 0.8639,
+        "maximum_scan_messages_per_window": 6,
+        "candidate_window_count": 0
+      },
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "failure_chain": [],
+      "recommended_checks": []
+    },
+    {
+      "name": "TF Delay / Discontinuity",
+      "score": 0.0,
+      "available": true,
+      "evidence": {
+        "healthy_max_map_odom_age_s": 0.325,
+        "tf_stale_threshold_s": 0.5
+      },
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "failure_chain": [],
+      "recommended_checks": []
+    }
+  ],
+  "supporting_evidence": [
+    "Observed right-wheel direction contradicts the direction predicted from healthy command-to-wheel behaviour.",
+    "Mismatch persisted for 23 synchronized windows."
+  ],
+  "contradicting_evidence": [],
+  "failure_chain": [
+    "Velocity command is issued",
+    "Wheel feedback contradicts expected differential-drive response",
+    "Encoder or motor direction becomes inconsistent with commanded motion",
+    "Odometry or physical motion can diverge from the command",
+    "Navigation may lose progress or trigger recovery"
+  ],
+  "recommended_checks": [
+    "Verify motor direction and encoder polarity",
+    "Check encoder sign convention",
+    "Inspect ros2_control / diff-drive wheel configuration",
+    "Verify URDF wheel-axis orientation"
+  ],
+  "method_note": "RobotReplay combines three layers: (1) an Isolation Forest trained on healthy telemetry, (2) a supervised Random Forest fault classifier, and (3) ROS-specific evidence reasoning. Ground-truth fault-event markers are not used by any production diagnosis layer.",
+  "bag": {
+    "path": "/home/atharva10764/robotreplay_ws/scenarios/wheel_mismatch/wheel_mismatch_001",
+    "storage_id": "sqlite3",
+    "duration_s": 149.651252473,
+    "message_count": 62005,
+    "topic_count": 11,
+    "topics": [
+      "/amcl_pose",
+      "/cmd_vel",
+      "/imu",
+      "/joint_states",
+      "/navigate_to_pose/_action/feedback",
+      "/navigate_to_pose/_action/status",
+      "/odom",
+      "/robotreplay/fault_event",
+      "/scan",
+      "/tf",
+      "/tf_static"
+    ],
+    "topic_types": {
+      "/tf_static": "tf2_msgs/msg/TFMessage",
+      "/tf": "tf2_msgs/msg/TFMessage",
+      "/navigate_to_pose/_action/status": "action_msgs/msg/GoalStatusArray",
+      "/amcl_pose": "geometry_msgs/msg/PoseWithCovarianceStamped",
+      "/robotreplay/fault_event": "std_msgs/msg/String",
+      "/cmd_vel": "geometry_msgs/msg/Twist",
+      "/imu": "sensor_msgs/msg/Imu",
+      "/odom": "nav_msgs/msg/Odometry",
+      "/joint_states": "sensor_msgs/msg/JointState",
+      "/navigate_to_pose/_action/feedback": "nav2_msgs/action/NavigateToPose_FeedbackMessage",
+      "/scan": "sensor_msgs/msg/LaserScan"
+    },
+    "semantic_topics": {
+      "scan": "/scan",
+      "cmd_vel": "/cmd_vel",
+      "odom": "/odom",
+      "imu": "/imu",
+      "joint_states": "/joint_states",
+      "amcl_pose": "/amcl_pose",
+      "tf": "/tf",
+      "tf_static": "/tf_static",
+      "map": null,
+      "costmap": null
+    },
+    "files": [
+      "wheel_mismatch_001_0.db3"
+    ],
+    "size_bytes": 22294528,
+    "capabilities": {
+      "generic_anomaly_model": true,
+      "lidar_dropout": true,
+      "tf_delay": true,
+      "localization_jump": true,
+      "wheel_mismatch": true
+    }
+  },
+  "capabilities": {
+    "generic_anomaly_model": true,
+    "lidar_dropout": true,
+    "tf_delay": true,
+    "localization_jump": true,
+    "wheel_mismatch": true
+  },
+  "performance": {
+    "processing_time_s": 9.85,
+    "bag_duration_s": 149.651,
+    "realtime_factor": 15.19,
+    "feature_rows": 750,
+    "sample_period_s": 0.2
+  },
+  "artifacts": {
+    "features_csv": "/home/atharva10764/robotreplay_ws/data/runtime/wheel_mismatch_001_features.csv",
+    "incident_json": "/home/atharva10764/robotreplay_ws/data/results/wheel_mismatch_001_incident.json"
+  }
+}

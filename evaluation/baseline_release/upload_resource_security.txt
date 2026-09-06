@@ -1,0 +1,14 @@
+
+=== RobotReplay Resource Security Regression ===
+
+[PASS] Archive file-count limit
+       Archive contains too many files. Maximum allowed: 32.
+[PASS] Suspicious compression ratio
+       Archive contains a suspiciously high compression ratio.
+[PASS] File outside selected bag directory
+       Archive contains files outside the ROS 2 bag directory.
+
+----------------------------------------
+Resource security tests passed: 3 / 3
+
+Resource security regression: PASS

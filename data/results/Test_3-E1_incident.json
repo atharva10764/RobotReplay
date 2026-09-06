@@ -1,0 +1,282 @@
+{
+  "schema_version": "2.0",
+  "mission": "Test_3-E1",
+  "mission_status": "ANOMALOUS",
+  "root_cause": "LiDAR Stream Integrity Failure",
+  "first_abnormal_time_s": 0.4,
+  "evidence_strength": 1.0,
+  "generic_ml": {
+    "available": false,
+    "reason": "Only 33% of Isolation Forest features are available.",
+    "model": "Isolation Forest",
+    "feature_coverage": 0.3333,
+    "present_features": [
+      "scan_age",
+      "scan_gap",
+      "scan_rate_hz",
+      "scan_valid_fraction",
+      "odom_vx",
+      "odom_wz",
+      "tf_map_odom_age",
+      "tf_odom_base_age"
+    ],
+    "missing_features": [
+      "cmd_vx",
+      "cmd_wz",
+      "command_active",
+      "imu_wz",
+      "left_wheel_vel",
+      "right_wheel_vel",
+      "wheel_velocity_difference",
+      "wheel_velocity_product",
+      "linear_motion_error",
+      "angular_motion_error",
+      "odom_imu_yaw_error",
+      "amcl_position_step",
+      "amcl_yaw_step",
+      "amcl_cov_x",
+      "amcl_cov_y",
+      "amcl_cov_yaw"
+    ]
+  },
+  "fault_classifier": {
+    "available": false,
+    "reason": "Fault classifier is not applicable: only 24% of its required telemetry feature representation is available (8/34; minimum 60%).",
+    "model": "Random Forest"
+  },
+  "intelligence_agreement": {
+    "available": false,
+    "reason": "Fault classifier is not applicable: only 24% of its required telemetry feature representation is available (8/34; minimum 60%)."
+  },
+  "ranked_hypotheses": [
+    {
+      "name": "LiDAR Stream Integrity Failure",
+      "score": 1.0,
+      "available": true,
+      "first_event_s": 0.4,
+      "evidence": {
+        "minimum_window_scan_messages": 5,
+        "nonmonotonic_fraction_threshold": 0.1,
+        "repeated_scan_fraction_threshold": 0.2,
+        "low_quality_scan_fraction_threshold": 0.5,
+        "peak_nonmonotonic_fraction_1s": 0.3265,
+        "peak_repeated_scan_fraction_1s": 0.6667,
+        "peak_low_quality_scan_fraction_1s": 1.0,
+        "minimum_finite_median_1s": 0.0,
+        "minimum_valid_median_1s": 0.0,
+        "maximum_scan_messages_per_window": 50,
+        "candidate_window_count": 77,
+        "scan_messages_at_detection": 12,
+        "nonmonotonic_fraction_at_detection": 0.1667,
+        "repeated_scan_fraction_at_detection": 0.5,
+        "low_quality_scan_fraction_at_detection": 0.75,
+        "finite_median_at_detection": 0.0,
+        "valid_median_at_detection": 0.0,
+        "downstream_navigation_staleness": {
+          "observed": true,
+          "first_event_s": 5.0,
+          "peak_odom_age_s": 11.623,
+          "peak_map_odom_age_s": 11.119,
+          "peak_odom_base_age_s": 11.691
+        }
+      },
+      "supporting_evidence": [
+        "12 LaserScan messages were available in the evidence window, providing sufficient observations for stream-integrity assessment.",
+        "LiDAR header timestamp ordering degraded (16.7% non-monotonic messages in the detection window).",
+        "Exact consecutive LiDAR payloads repeated abnormally (50.0% of messages in the detection window).",
+        "Most LiDAR messages in the same window contained severely degraded usable range content (75.0% severely degraded scans).",
+        "Median usable return content in the detection window fell to 0.0% (finite-return median 0.0%).",
+        "Navigation-state telemetry became persistently stale after the first LiDAR integrity event (approximately 4.600 s later), supporting downstream propagation."
+      ],
+      "contradicting_evidence": [],
+      "failure_chain": [
+        "LiDAR stream integrity becomes unreliable",
+        "Timestamp ordering breaks, scan payloads repeat, and usable range content deteriorates",
+        "Laser-based state estimation receives inconsistent sensor observations",
+        "Odometry / localization / transform updates may subsequently become stale",
+        "Navigation reliability degrades"
+      ],
+      "recommended_checks": [
+        "Inspect the LiDAR driver and transport path for duplicated, replayed, or out-of-order LaserScan messages",
+        "Inspect LaserScan header timestamps and ROS time synchronization",
+        "Inspect finite and in-range LaserScan return fractions over time",
+        "Check LiDAR network bandwidth, DDS traffic, message rate, and compute load",
+        "Inspect laser odometry and downstream TF behavior immediately after the first LiDAR integrity event"
+      ]
+    },
+    {
+      "name": "TF Delay / Discontinuity",
+      "score": 1.0,
+      "available": true,
+      "first_event_s": 5.0,
+      "evidence": {
+        "healthy_max_map_odom_age_s": 0.325,
+        "tf_stale_threshold_s": 0.5,
+        "candidate_first_event_s": 5.0,
+        "candidate_onset_fraction": 0.3205,
+        "candidate_onset_percent": 32.05,
+        "terminal_region_start_percent": 85.0,
+        "map_odom_recovered": false,
+        "companion_navigation_stream_stale": true,
+        "terminal_shutdown_tail_suppressed": false,
+        "tf_odom_base_age_peak_s": 11.691,
+        "tf_odom_base_age_healthy_max_s": 0.187,
+        "tf_odom_base_age_stale_threshold_s": 0.5,
+        "odom_age_peak_s": 11.623,
+        "odom_age_healthy_max_s": 0.187,
+        "odom_age_stale_threshold_s": 0.5,
+        "map_odom_age_at_detection_s": 0.519,
+        "peak_map_odom_age_s": 11.119,
+        "peak_odom_base_age_s": 11.691
+      },
+      "supporting_evidence": [
+        "map\u2192odom age reached 11.119 s versus a healthy maximum of 0.325 s.",
+        "Additional navigation-state telemetry also became stale while substantial mission time remained, supporting a mid-mission navigation/transform subsystem interruption."
+      ],
+      "contradicting_evidence": [],
+      "failure_chain": [
+        "map\u2192odom transform stops updating",
+        "Localization transform becomes stale",
+        "Navigation pose transforms become unreliable",
+        "Planning or control may pause, fail, or recover"
+      ],
+      "recommended_checks": [
+        "Inspect the localization / map\u2192odom transform publisher",
+        "Inspect transform timestamps and publication continuity",
+        "Verify ROS time synchronization",
+        "Check map, odom, and base frame configuration"
+      ]
+    },
+    {
+      "name": "Localization Jump",
+      "score": 0.0,
+      "available": false,
+      "reason": "Missing telemetry features: amcl_position_step",
+      "evidence": {},
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "failure_chain": [],
+      "recommended_checks": []
+    },
+    {
+      "name": "LiDAR Dropout",
+      "score": 0.0,
+      "available": true,
+      "evidence": {
+        "healthy_max_scan_age_s": 0.341,
+        "scan_stale_threshold_s": 0.512
+      },
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "failure_chain": [],
+      "recommended_checks": []
+    },
+    {
+      "name": "Wheel / Encoder Direction Mismatch",
+      "score": 0.0,
+      "available": false,
+      "reason": "Missing telemetry features: cmd_vx, cmd_wz, left_wheel_vel, right_wheel_vel",
+      "evidence": {},
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "failure_chain": [],
+      "recommended_checks": []
+    }
+  ],
+  "supporting_evidence": [
+    "12 LaserScan messages were available in the evidence window, providing sufficient observations for stream-integrity assessment.",
+    "LiDAR header timestamp ordering degraded (16.7% non-monotonic messages in the detection window).",
+    "Exact consecutive LiDAR payloads repeated abnormally (50.0% of messages in the detection window).",
+    "Most LiDAR messages in the same window contained severely degraded usable range content (75.0% severely degraded scans).",
+    "Median usable return content in the detection window fell to 0.0% (finite-return median 0.0%).",
+    "Navigation-state telemetry became persistently stale after the first LiDAR integrity event (approximately 4.600 s later), supporting downstream propagation."
+  ],
+  "contradicting_evidence": [],
+  "failure_chain": [
+    "LiDAR stream integrity becomes unreliable",
+    "Timestamp ordering breaks, scan payloads repeat, and usable range content deteriorates",
+    "Laser-based state estimation receives inconsistent sensor observations",
+    "Odometry / localization / transform updates may subsequently become stale",
+    "Navigation reliability degrades"
+  ],
+  "recommended_checks": [
+    "Inspect the LiDAR driver and transport path for duplicated, replayed, or out-of-order LaserScan messages",
+    "Inspect LaserScan header timestamps and ROS time synchronization",
+    "Inspect finite and in-range LaserScan return fractions over time",
+    "Check LiDAR network bandwidth, DDS traffic, message rate, and compute load",
+    "Inspect laser odometry and downstream TF behavior immediately after the first LiDAR integrity event"
+  ],
+  "method_note": "RobotReplay combines three layers: (1) an Isolation Forest trained on healthy telemetry, (2) a supervised Random Forest fault classifier, and (3) ROS-specific evidence reasoning. Ground-truth fault-event markers are not used by any production diagnosis layer.",
+  "bag": {
+    "path": "/home/atharva10764/robotreplay_ws/external_validation/bcubed/bags/Test_3-E1",
+    "storage_id": "mcap",
+    "duration_s": 15.592923288,
+    "message_count": 4082,
+    "topic_count": 10,
+    "topics": [
+      "/direct_laser_odometry/odom",
+      "/head_front_camera/rgb/image_raw",
+      "/joy_priority",
+      "/local_costmap/costmap",
+      "/map",
+      "/power/is_emergency",
+      "/rosout",
+      "/scan_raw",
+      "/tf_drop",
+      "/tf_static"
+    ],
+    "topic_types": {
+      "/power/is_emergency": "std_msgs/msg/Bool",
+      "/local_costmap/costmap": "nav_msgs/msg/OccupancyGrid",
+      "/head_front_camera/rgb/image_raw": "sensor_msgs/msg/Image",
+      "/direct_laser_odometry/odom": "nav_msgs/msg/Odometry",
+      "/joy_priority": "std_msgs/msg/Bool",
+      "/tf_drop": "tf2_msgs/msg/TFMessage",
+      "/tf_static": "tf2_msgs/msg/TFMessage",
+      "/scan_raw": "sensor_msgs/msg/LaserScan",
+      "/map": "nav_msgs/msg/OccupancyGrid",
+      "/rosout": "rcl_interfaces/msg/Log"
+    },
+    "semantic_topics": {
+      "scan": "/scan_raw",
+      "cmd_vel": null,
+      "odom": "/direct_laser_odometry/odom",
+      "imu": null,
+      "joint_states": null,
+      "amcl_pose": null,
+      "tf": "/tf_drop",
+      "tf_static": "/tf_static",
+      "map": "/map",
+      "costmap": "/local_costmap/costmap"
+    },
+    "files": [
+      "rosbag_23-Mar-12_11_0.mcap"
+    ],
+    "size_bytes": 360499504,
+    "capabilities": {
+      "generic_anomaly_model": true,
+      "lidar_dropout": true,
+      "tf_delay": true,
+      "localization_jump": false,
+      "wheel_mismatch": false
+    }
+  },
+  "capabilities": {
+    "generic_anomaly_model": true,
+    "lidar_dropout": true,
+    "tf_delay": true,
+    "localization_jump": false,
+    "wheel_mismatch": false
+  },
+  "performance": {
+    "processing_time_s": 1.181,
+    "bag_duration_s": 15.593,
+    "realtime_factor": 13.2,
+    "feature_rows": 79,
+    "sample_period_s": 0.2
+  },
+  "artifacts": {
+    "features_csv": "/home/atharva10764/robotreplay_ws/data/runtime/Test_3-E1_features.csv",
+    "incident_json": "/home/atharva10764/robotreplay_ws/data/results/Test_3-E1_incident.json"
+  }
+}

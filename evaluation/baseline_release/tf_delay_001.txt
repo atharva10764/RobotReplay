@@ -1,0 +1,92 @@
+[INFO] [1787497411.858807364] [rosbag2_storage]: Opened database '/home/atharva10764/robotreplay_ws/scenarios/tf_delay/tf_delay_001/tf_delay_001_0.db3' for READ_ONLY.
+[INFO] [1787497414.276695045] [rosbag2_storage]: Opened database '/home/atharva10764/robotreplay_ws/scenarios/tf_delay/tf_delay_001/tf_delay_001_0.db3' for READ_ONLY.
+
+=== RobotReplay Feature Extraction V2 ===
+Bag:           /home/atharva10764/robotreplay_ws/scenarios/tf_delay/tf_delay_001
+Storage:       sqlite3
+Duration:      149.651 s
+Feature rows:  750
+Feature cols:  52
+
+Resolved telemetry:
+  scan             /scan
+  cmd_vel          /cmd_vel
+  odom             /odom
+  imu              /imu
+  joint_states     /joint_states
+  amcl_pose        /amcl_pose
+  tf               /tf
+
+Joint names:
+  wheel_left_joint
+  wheel_right_joint
+
+Health / age features:
+  scan_age                  max=0.341s
+  cmd_age                   max=4.635s
+  odom_age                  max=0.156s
+  imu_age                   max=0.149s
+  joint_age                 max=0.156s
+  amcl_age                  max=8.383s
+  tf_map_odom_age           max=8.035s
+  tf_odom_base_age          max=0.156s
+
+Saved: /home/atharva10764/robotreplay_ws/data/runtime/tf_delay_001_features.csv
+Feature extraction V2: PASS
+
+LiDAR integrity enrichment:
+  raw scan messages: 742
+  peak non-monotonic fraction (1 s): 0.00%
+  peak repeated-scan fraction (1 s): 0.00%
+  peak degraded-scan fraction (1 s): 0.00%
+  minimum median finite-return fraction (1 s): 86.39%
+  minimum median valid-return fraction (1 s): 86.39%
+  maximum scan messages/window: 6
+
+Enriched feature columns: 66
+LiDAR integrity enrichment: PASS
+
+========================================
+        ROBOTREPLAY ANALYSIS
+========================================
+
+Mission: tf_delay_001
+Bag: 149.7 s | 61,965 messages | 11 topics | sqlite3
+Processing time: 9.659 s
+Processing speed: 15.49x realtime
+
+INCIDENT REPORT
+----------------------------------------
+Mission status: ANOMALOUS
+Most likely cause: TF Delay / Discontinuity
+First diagnostic event: 60.600 s
+Evidence strength: 1.000
+ML anomalous-window rate: 1.07%
+
+Ranked hypotheses:
+  1. TF Delay / Discontinuity               1.000
+  2. Localization Jump                      0.000
+  3. LiDAR Dropout                          0.000
+  4. LiDAR Stream Integrity Failure         0.000
+  5. Wheel / Encoder Direction Mismatch     0.000
+
+Supporting evidence:
+  ✓ map→odom age reached 8.035 s versus a healthy maximum of 0.325 s.
+  ✓ The transform stream later recovered, supporting a transient TF interruption rather than a terminal recording tail.
+  ✓ odom→base remained fresh (peak age 0.156 s), localizing the stale transform behavior to the map→odom layer.
+
+Failure chain:
+  → map→odom transform stops updating
+  → Localization transform becomes stale
+  → Navigation pose transforms become unreliable
+  → Planning or control may pause, fail, or recover
+
+Recommended checks:
+  • Inspect the localization / map→odom transform publisher
+  • Inspect transform timestamps and publication continuity
+  • Verify ROS time synchronization
+  • Check map, odom, and base frame configuration
+
+Incident report saved: /home/atharva10764/robotreplay_ws/data/results/tf_delay_001_incident.json
+
+RobotReplay analysis: PASS

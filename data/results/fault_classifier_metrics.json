@@ -1,0 +1,70 @@
+{
+  "evaluation_type": "Held-out source-mission controlled telemetry augmentation",
+  "train_source_missions": [
+    "healthy_001",
+    "healthy_002"
+  ],
+  "test_source_missions": [
+    "healthy_003"
+  ],
+  "training_samples": 600,
+  "test_samples": 200,
+  "classes": [
+    "Healthy",
+    "LiDAR Dropout",
+    "Localization Jump",
+    "TF Delay / Discontinuity",
+    "Wheel / Encoder Direction Mismatch"
+  ],
+  "accuracy": 1.0,
+  "macro_precision": 1.0,
+  "macro_recall": 1.0,
+  "macro_f1": 1.0,
+  "healthy_false_positive_rate": 0.0,
+  "classification_report": {
+    "Healthy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "LiDAR Dropout": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "Localization Jump": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "TF Delay / Discontinuity": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "Wheel / Encoder Direction Mismatch": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 40.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 200.0
+    }
+  },
+  "method_note": "Training variants are controlled telemetry augmentations derived from healthy_001 and healthy_002. All test variants are derived only from held-out source mission healthy_003. Source missions do not overlap between train and test."
+}

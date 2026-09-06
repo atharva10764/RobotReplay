@@ -1,0 +1,6 @@
+scenario,ground_truth,prediction,probability,correct,selected_window,windows_evaluated
+Healthy Mission,Healthy,Healthy,0.9207283552066909,True,—,113
+Localization Jump,Localization Jump,Localization Jump,0.9994285714285714,True,0.0–20.0 s,11
+LiDAR Dropout,LiDAR Dropout,LiDAR Dropout,1.0,True,58.0–78.0 s,65
+TF Delay / Discontinuity,TF Delay / Discontinuity,TF Delay / Discontinuity,0.99859028973685,True,56.0–76.0 s,65
+Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,Wheel / Encoder Direction Mismatch,0.9966666666666667,True,44.0–64.0 s,65

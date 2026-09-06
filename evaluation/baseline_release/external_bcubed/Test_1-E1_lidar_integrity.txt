@@ -1,0 +1,64 @@
+
+=== RobotReplay Feature Extraction V2 ===
+Bag:           /home/atharva10764/robotreplay_ws/external_validation/bcubed/bags/Test_1-E1
+Storage:       mcap
+Duration:      24.755 s
+Feature rows:  125
+Feature cols:  26
+
+Resolved telemetry:
+  scan             /scan_raw
+  cmd_vel          not available
+  odom             /direct_laser_odometry/odom
+  imu              not available
+  joint_states     not available
+  amcl_pose        not available
+  tf               /tf_drop
+
+Health / age features:
+  scan_age                  max=0.079s
+  odom_age                  max=3.610s
+  tf_map_odom_age           max=3.808s
+  tf_odom_base_age          max=3.609s
+
+Saved: /home/atharva10764/robotreplay_ws/data/runtime/Test_1-E1_features.csv
+Feature extraction V2: PASS
+
+LiDAR integrity enrichment:
+  raw scan messages: 366
+  peak non-monotonic fraction (1 s): 0.00%
+  peak repeated-scan fraction (1 s): 0.00%
+  peak degraded-scan fraction (1 s): 0.00%
+  minimum median finite-return fraction (1 s): 94.41%
+  minimum median valid-return fraction (1 s): 94.41%
+  maximum scan messages/window: 17
+
+Enriched feature columns: 40
+LiDAR integrity enrichment: PASS
+
+========================================
+        ROBOTREPLAY ANALYSIS
+========================================
+
+Mission: Test_1-E1
+Bag: 24.8 s | 2,061 messages | 10 topics | mcap
+Processing time: 2.189 s
+Processing speed: 11.31x realtime
+
+INCIDENT REPORT
+----------------------------------------
+Mission status: HEALTHY
+Most likely cause: No supported fault detected
+Evidence strength: 0.000
+ML layer: unavailable (Only 33% of Isolation Forest features are available.)
+
+Ranked hypotheses:
+  1. Localization Jump                      0.000 [unavailable]
+  2. LiDAR Dropout                          0.000
+  3. LiDAR Stream Integrity Failure         0.000
+  4. TF Delay / Discontinuity               0.000
+  5. Wheel / Encoder Direction Mismatch     0.000 [unavailable]
+
+Incident report saved: /home/atharva10764/robotreplay_ws/data/results/Test_1-E1_incident.json
+
+RobotReplay analysis: PASS

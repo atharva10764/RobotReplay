@@ -1,0 +1,42 @@
+
+=== RobotReplay Upload Validation ===
+Archive:       robotreplay_sqlite_positive.zip
+Upload size:   1.54 MiB
+Extracted:     5.74 MiB
+Files:         2
+Bag directory: localization_jump_001
+Storage:       sqlite3
+Duration:      41.742 s
+Messages:      16,099
+Topics:        11
+
+Topics detected:
+  • /amcl_pose
+  • /cmd_vel
+  • /imu
+  • /joint_states
+  • /navigate_to_pose/_action/feedback
+  • /navigate_to_pose/_action/status
+  • /odom
+  • /robotreplay/fault_event
+  • /scan
+  • /tf
+  • /tf_static
+
+Diagnostic capabilities:
+  Generic ML anomaly layer     YES
+  LiDAR dropout                YES
+  TF delay                     YES
+  Localization jump            YES
+  Wheel mismatch               YES
+
+Security checks:
+  ✓ Valid ZIP archive
+  ✓ Path traversal check
+  ✓ Symlink check
+  ✓ File-type allowlist
+  ✓ Archive-size limits
+  ✓ Single ROS bag structure
+  ✓ rosbag metadata validation
+
+Upload validation: PASS

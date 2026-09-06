@@ -1,0 +1,66 @@
+================================================================
+ROBOTREPLAY BASELINE RELEASE MANIFEST
+================================================================
+
+Release:                v1.0.0
+Package version:        1.0.0
+Generated UTC:          2026-09-06T11:42:07.277290+00:00
+
+PROJECT STATUS
+--------------
+Active development
+
+RUNTIME
+-------
+ROS_DISTRO:             humble
+ROS_VERSION:            2
+ROS_PYTHON_VERSION:     3
+Python:                 3.10.12
+Platform:               Linux-6.8.0-138-generic-x86_64-with-glibc2.35
+
+PYTHON PACKAGES
+---------------
+numpy                   2.2.6
+pandas                  2.3.3
+scipy                   1.15.3
+scikit-learn            1.7.2
+joblib                  1.5.3
+PyYAML                  6.0.3
+plotly                  6.9.0
+streamlit               1.61.1
+reportlab               4.4.9
+
+CONTROLLED BASELINE REGRESSION
+------------------------------
+healthy_003              HEALTHY / no supported fault
+localization_jump_001    Localization Jump / 10.400 s
+lidar_dropout_001        LiDAR Dropout / 60.600 s
+tf_delay_001             TF Delay / Discontinuity / 60.600 s
+wheel_mismatch_001       Wheel / Encoder Direction Mismatch / 60.200 s
+
+Controlled recordings:   5 / 5 expected outcomes
+
+UPLOAD VALIDATION
+-----------------
+Input-security suite:    9 / 9 PASS
+Resource-security suite: 3 / 3 PASS
+SQLite3 upload:          PASS
+MCAP upload:             PASS
+
+SUPPORTED EVIDENCE SIGNATURES
+-----------------------------
+1. Localization Jump
+2. LiDAR Dropout
+3. LiDAR Stream Integrity Failure
+4. TF Delay / Discontinuity
+5. Wheel / Encoder Direction Mismatch
+
+EVALUATION SCOPE
+----------------
+The supervised classifier achieved 100% on the 200-sample controlled held-out telemetry-augmentation benchmark.
+This is not a production-world accuracy claim.
+BCubed / ACOLYTE results used while developing the LiDAR Stream Integrity Failure signature are external development evidence, not independent blind validation.
+
+STATUS
+------
+Baseline release verification: PASS

@@ -1,0 +1,91 @@
+[INFO] [1787497386.777210450] [rosbag2_storage]: Opened database '/home/atharva10764/robotreplay_ws/scenarios/localization_jump/localization_jump_001/localization_jump_001_0.db3' for READ_ONLY.
+[INFO] [1787497387.471452559] [rosbag2_storage]: Opened database '/home/atharva10764/robotreplay_ws/scenarios/localization_jump/localization_jump_001/localization_jump_001_0.db3' for READ_ONLY.
+
+=== RobotReplay Feature Extraction V2 ===
+Bag:           /home/atharva10764/robotreplay_ws/scenarios/localization_jump/localization_jump_001
+Storage:       sqlite3
+Duration:      41.742 s
+Feature rows:  210
+Feature cols:  52
+
+Resolved telemetry:
+  scan             /scan
+  cmd_vel          /cmd_vel
+  odom             /odom
+  imu              /imu
+  joint_states     /joint_states
+  amcl_pose        /amcl_pose
+  tf               /tf
+
+Joint names:
+  wheel_left_joint
+  wheel_right_joint
+
+Health / age features:
+  scan_age                  max=0.202s
+  cmd_age                   max=9.476s
+  odom_age                  max=0.080s
+  imu_age                   max=0.058s
+  joint_age                 max=0.080s
+  amcl_age                  max=10.197s
+  tf_map_odom_age           max=0.224s
+  tf_odom_base_age          max=0.080s
+
+Saved: /home/atharva10764/robotreplay_ws/data/runtime/localization_jump_001_features.csv
+Feature extraction V2: PASS
+
+LiDAR integrity enrichment:
+  raw scan messages: 203
+  peak non-monotonic fraction (1 s): 0.00%
+  peak repeated-scan fraction (1 s): 0.00%
+  peak degraded-scan fraction (1 s): 0.00%
+  minimum median finite-return fraction (1 s): 88.33%
+  minimum median valid-return fraction (1 s): 88.33%
+  maximum scan messages/window: 5
+
+Enriched feature columns: 66
+LiDAR integrity enrichment: PASS
+
+========================================
+        ROBOTREPLAY ANALYSIS
+========================================
+
+Mission: localization_jump_001
+Bag: 41.7 s | 16,099 messages | 11 topics | sqlite3
+Processing time: 2.535 s
+Processing speed: 16.47x realtime
+
+INCIDENT REPORT
+----------------------------------------
+Mission status: ANOMALOUS
+Most likely cause: Localization Jump
+First diagnostic event: 10.400 s
+Evidence strength: 1.000
+ML anomalous-window rate: 12.86%
+
+Ranked hypotheses:
+  1. Localization Jump                      1.000
+  2. LiDAR Dropout                          0.000
+  3. LiDAR Stream Integrity Failure         0.000
+  4. TF Delay / Discontinuity               0.000
+  5. Wheel / Encoder Direction Mismatch     0.000
+
+Supporting evidence:
+  ✓ AMCL position changed 2.015 m, above the healthy threshold of 0.496 m.
+  ✓ map→odom changed 2.002 m within 0.000 s of the AMCL discontinuity.
+
+Failure chain:
+  → Localization estimate changes abruptly
+  → map→odom correction changes abruptly
+  → Robot pose used by Nav2 becomes inconsistent
+  → Navigation controller reacts to changed pose
+
+Recommended checks:
+  • Check AMCL initialization and pose resets
+  • Inspect localization sensor consistency
+  • Inspect unexpected /initialpose publications
+  • Verify map-to-odom localization updates
+
+Incident report saved: /home/atharva10764/robotreplay_ws/data/results/localization_jump_001_incident.json
+
+RobotReplay analysis: PASS

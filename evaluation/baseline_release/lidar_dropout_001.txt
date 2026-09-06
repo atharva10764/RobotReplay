@@ -1,0 +1,91 @@
+[INFO] [1787497399.293498008] [rosbag2_storage]: Opened database '/home/atharva10764/robotreplay_ws/scenarios/lidar_dropout/lidar_dropout_001/lidar_dropout_001_0.db3' for READ_ONLY.
+[INFO] [1787497401.673947464] [rosbag2_storage]: Opened database '/home/atharva10764/robotreplay_ws/scenarios/lidar_dropout/lidar_dropout_001/lidar_dropout_001_0.db3' for READ_ONLY.
+
+=== RobotReplay Feature Extraction V2 ===
+Bag:           /home/atharva10764/robotreplay_ws/scenarios/lidar_dropout/lidar_dropout_001
+Storage:       sqlite3
+Duration:      149.651 s
+Feature rows:  750
+Feature cols:  52
+
+Resolved telemetry:
+  scan             /scan
+  cmd_vel          /cmd_vel
+  odom             /odom
+  imu              /imu
+  joint_states     /joint_states
+  amcl_pose        /amcl_pose
+  tf               /tf
+
+Joint names:
+  wheel_left_joint
+  wheel_right_joint
+
+Health / age features:
+  scan_age                  max=8.066s
+  cmd_age                   max=4.635s
+  odom_age                  max=0.156s
+  imu_age                   max=0.149s
+  joint_age                 max=0.156s
+  amcl_age                  max=8.383s
+  tf_map_odom_age           max=0.325s
+  tf_odom_base_age          max=0.156s
+
+Saved: /home/atharva10764/robotreplay_ws/data/runtime/lidar_dropout_001_features.csv
+Feature extraction V2: PASS
+
+LiDAR integrity enrichment:
+  raw scan messages: 702
+  peak non-monotonic fraction (1 s): 0.00%
+  peak repeated-scan fraction (1 s): 0.00%
+  peak degraded-scan fraction (1 s): 0.00%
+  minimum median finite-return fraction (1 s): 86.39%
+  minimum median valid-return fraction (1 s): 86.39%
+  maximum scan messages/window: 6
+
+Enriched feature columns: 66
+LiDAR integrity enrichment: PASS
+
+========================================
+        ROBOTREPLAY ANALYSIS
+========================================
+
+Mission: lidar_dropout_001
+Bag: 149.7 s | 61,965 messages | 11 topics | sqlite3
+Processing time: 9.381 s
+Processing speed: 15.95x realtime
+
+INCIDENT REPORT
+----------------------------------------
+Mission status: ANOMALOUS
+Most likely cause: LiDAR Dropout
+First diagnostic event: 60.600 s
+Evidence strength: 1.000
+ML anomalous-window rate: 1.07%
+
+Ranked hypotheses:
+  1. LiDAR Dropout                          1.000
+  2. Localization Jump                      0.000
+  3. LiDAR Stream Integrity Failure         0.000
+  4. TF Delay / Discontinuity               0.000
+  5. Wheel / Encoder Direction Mismatch     0.000
+
+Supporting evidence:
+  ✓ LiDAR scan age reached 8.066 s versus a healthy maximum of 0.341 s.
+  ✓ Observed scan gap reached 8.212 s.
+
+Failure chain:
+  → LiDAR scan stream becomes stale
+  → Navigation receives outdated obstacle data
+  → Local costmap can no longer be refreshed reliably
+  → Controller may slow, stop, or trigger recovery
+
+Recommended checks:
+  • Check /scan publisher health and frequency
+  • Inspect LiDAR driver or transport interruptions
+  • Verify sensor power and communication
+  • Check Nav2 observation-source timeout settings
+
+Incident report saved: /home/atharva10764/robotreplay_ws/data/results/lidar_dropout_001_incident.json
+
+RobotReplay analysis: PASS

@@ -1,0 +1,6 @@
+,Healthy,LiDAR Dropout,Localization Jump,TF Delay / Discontinuity,Wheel / Encoder Direction Mismatch
+Healthy,40,0,0,0,0
+LiDAR Dropout,0,40,0,0,0
+Localization Jump,0,0,40,0,0
+TF Delay / Discontinuity,0,0,0,40,0
+Wheel / Encoder Direction Mismatch,0,0,0,0,40

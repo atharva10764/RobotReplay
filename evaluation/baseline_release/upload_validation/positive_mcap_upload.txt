@@ -1,0 +1,41 @@
+
+=== RobotReplay Upload Validation ===
+Archive:       robotreplay_mcap_positive.zip
+Upload size:   163.64 MiB
+Extracted:     244.71 MiB
+Files:         2
+Bag directory: Test_3-E2
+Storage:       mcap
+Duration:      11.980 s
+Messages:      3,102
+Topics:        10
+
+Topics detected:
+  • /direct_laser_odometry/odom
+  • /head_front_camera/rgb/image_raw
+  • /joy_priority
+  • /local_costmap/costmap
+  • /map
+  • /power/is_emergency
+  • /rosout
+  • /scan_raw
+  • /tf_drop
+  • /tf_static
+
+Diagnostic capabilities:
+  Generic ML anomaly layer     YES
+  LiDAR dropout                YES
+  TF delay                     YES
+  Localization jump            NO
+  Wheel mismatch               NO
+
+Security checks:
+  ✓ Valid ZIP archive
+  ✓ Path traversal check
+  ✓ Symlink check
+  ✓ File-type allowlist
+  ✓ Archive-size limits
+  ✓ Single ROS bag structure
+  ✓ rosbag metadata validation
+
+Upload validation: PASS

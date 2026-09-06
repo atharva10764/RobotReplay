@@ -1,0 +1,26 @@
+
+=== RobotReplay Upload Security Regression ===
+
+[PASS] Path traversal
+       Archive contains a path-traversal entry.
+[PASS] Absolute path
+       Archive contains an absolute path.
+[PASS] Windows-style path traversal
+       Archive contains a path-traversal entry.
+[PASS] Unexpected file type
+       Archive contains an unexpected file type: payload.py
+[PASS] Symlink entry
+       Symbolic links are not allowed in uploaded archives.
+[PASS] Empty ZIP
+       Uploaded ZIP archive is empty.
+[PASS] Invalid ZIP
+       Uploaded file is not a valid ZIP archive.
+[PASS] Missing metadata
+       No metadata.yaml was found. Upload a ZIP containing one ROS 2 bag directory.
+[PASS] Multiple bags in one upload
+       Exactly one ROS 2 bag must be included in each uploaded archive.
+
+----------------------------------------
+Security tests passed: 9 / 9
+
+Upload security regression: PASS

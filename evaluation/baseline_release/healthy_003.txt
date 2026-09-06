@@ -1,0 +1,74 @@
+[INFO] [1787497518.904202617] [rosbag2_storage]: Opened database '/home/atharva10764/robotreplay_ws/scenarios/healthy/healthy_003/healthy_003_0.db3' for READ_ONLY.
+[INFO] [1787497521.812669560] [rosbag2_storage]: Opened database '/home/atharva10764/robotreplay_ws/scenarios/healthy/healthy_003/healthy_003_0.db3' for READ_ONLY.
+
+=== RobotReplay Feature Extraction V2 ===
+Bag:           /home/atharva10764/robotreplay_ws/scenarios/healthy/healthy_003
+Storage:       sqlite3
+Duration:      245.731 s
+Feature rows:  1230
+Feature cols:  52
+
+Resolved telemetry:
+  scan             /scan
+  cmd_vel          /cmd_vel
+  odom             /odom
+  imu              /imu
+  joint_states     /joint_states
+  amcl_pose        /amcl_pose
+  tf               /tf
+
+Joint names:
+  wheel_left_joint
+  wheel_right_joint
+
+Health / age features:
+  scan_age                  max=0.201s
+  cmd_age                   max=6.699s
+  odom_age                  max=0.087s
+  imu_age                   max=0.071s
+  joint_age                 max=0.088s
+  amcl_age                  max=17.394s
+  tf_map_odom_age           max=0.209s
+  tf_odom_base_age          max=0.088s
+
+Saved: /home/atharva10764/robotreplay_ws/data/runtime/healthy_003_features.csv
+Feature extraction V2: PASS
+
+LiDAR integrity enrichment:
+  raw scan messages: 1222
+  peak non-monotonic fraction (1 s): 0.00%
+  peak repeated-scan fraction (1 s): 0.00%
+  peak degraded-scan fraction (1 s): 0.00%
+  minimum median finite-return fraction (1 s): 85.83%
+  minimum median valid-return fraction (1 s): 85.83%
+  maximum scan messages/window: 6
+
+Enriched feature columns: 66
+LiDAR integrity enrichment: PASS
+
+========================================
+        ROBOTREPLAY ANALYSIS
+========================================
+
+Mission: healthy_003
+Bag: 245.7 s | 104,009 messages | 10 topics | sqlite3
+Processing time: 12.983 s
+Processing speed: 18.93x realtime
+
+INCIDENT REPORT
+----------------------------------------
+Mission status: HEALTHY
+Most likely cause: No supported fault detected
+Evidence strength: 0.000
+ML anomalous-window rate: 0.73%
+
+Ranked hypotheses:
+  1. Localization Jump                      0.000
+  2. LiDAR Dropout                          0.000
+  3. LiDAR Stream Integrity Failure         0.000
+  4. TF Delay / Discontinuity               0.000
+  5. Wheel / Encoder Direction Mismatch     0.000
+
+Incident report saved: /home/atharva10764/robotreplay_ws/data/results/healthy_003_incident.json
+
+RobotReplay analysis: PASS
