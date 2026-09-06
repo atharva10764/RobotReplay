@@ -2,9 +2,7 @@
 
 > **The Black Box Investigator for Autonomous Robots**
 
-**Status:** Active development  
-**Current baseline:** v1.0.0  
-**Stack:** ROS 2 Humble · Python 3.10 · SQLite3 / MCAP · Streamlit
+**Status:** Active development · **Current baseline:** v1.0.0 · **Stack:** ROS 2 Humble · Python 3.10 · SQLite3 / MCAP · Streamlit
 
 RobotReplay is an incident-investigation platform for ROS 2 autonomous robots. It turns mission recordings into evidence-backed diagnoses that explain **what failed first, when it happened, how the failure propagated, which telemetry supports the conclusion, and what an engineer should inspect next**.
 
